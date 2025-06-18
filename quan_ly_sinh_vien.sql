@@ -7,12 +7,16 @@ id int,
  country varchar(50)
 );
 create table classes(
-id int,
-name varchar(30)
+id int auto_increment,
+name varchar(30) not null,
+primary key(id)
 );
 create table teachers(
-id int,
-name varchar(30),
+id int auto_increment,
+name varchar(30) not null,
 age int,
-country varchar(30)
+country varchar(30),
+primary key(id)
 );
+select id,name,age from teachers;
+insert into teachers (name,age) values ("HaiTT","30");
