@@ -44,9 +44,7 @@ select student_id,student_name,address,phone,status,class_id from students where
 select class_id,class_name,start_date,status from classes where month(start_date)=12;
 select sub_id, sub_name, credit, status from subjects where credit between 3 and 5;
 update students set class_id = 2 where student_id = 1;
-select s.student_name as StudentName, 
-       sub.sub_name as SubName, 
-       m.mark as Mark from marks
+select students.student_name as StudentName, subjects.sub_name as SubName, marks.mark as Mark from marks
 join students s on m.student_id = s.student_id
 join subjects sub on m.sub_id = sub.sub_id
 order by m.mark desc, s.student_name asc;
