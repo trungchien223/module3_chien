@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Khách sạn Demo</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- 1. Header: Logo + Menu -->
+    <header class="header">
+        <div class="container header-flex">
+            <div class="logo">HotelDemo</div>
+            <nav class="nav">
+                <ul>
+                    <li><a href="#home">Trang chủ</a></li>
+                    <li><a href="#about">Giới thiệu</a></li>
+                    <li><a href="#rooms">Phòng</a></li>
+                    <li><a href="#services">Dịch vụ</a></li>
+                    <li><a href="#offers">Ưu đãi</a></li>
+                    <li><a href="#reviews">Đánh giá</a></li>
+                    <li><a href="#contact">Liên hệ</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- 2. Banner + Form tìm phòng -->
+    <section class="banner" id="home">
+        <div class="banner-overlay">
+            <div class="banner-content">
+                <h1>Chào mừng đến với HotelDemo</h1>
+                <p>Trải nghiệm nghỉ dưỡng đẳng cấp, sang trọng và tiện nghi</p>
+                <form class="search-form">
+                    <input type="date" placeholder="Ngày nhận phòng">
+                    <input type="date" placeholder="Ngày trả phòng">
+                    <input type="number" min="1" max="10" placeholder="Số khách">
+                    <button type="submit">Tìm phòng</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- 3. Giới thiệu ngắn gọn -->
+    <section class="about" id="about">
+        <div class="container">
+            <h2>Về chúng tôi</h2>
+            <p>HotelDemo là khách sạn 4 sao tọa lạc tại trung tâm thành phố, mang đến cho bạn không gian nghỉ dưỡng lý tưởng với dịch vụ chuyên nghiệp, tiện nghi hiện đại và phong cách phục vụ tận tâm.</p>
+        </div>
+    </section>
+
+    <!-- 4. Danh sách phòng -->
+    <section class="rooms" id="rooms">
+        <div class="container">
+            <h2>Danh sách phòng</h2>
+            <div class="room-list">
+                <div class="room-card">
+                    <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=400&q=80" alt="Classic Room">
+                    <h3>Phòng Classic</h3>
+                    <p>Phòng tiện nghi, phù hợp cho 2 người.</p>
+                    <span class="price">2.400.000đ/đêm</span>
+                    <button>Đặt ngay</button>
+                </div>
+                <div class="room-card">
+                    <img src="https://images.unsplash.com/photo-1512918728675-ed5a9ecdebfd?auto=format&fit=crop&w=400&q=80" alt="Deluxe Room">
+                    <h3>Phòng Deluxe</h3>
+                    <p>Không gian hiện đại, view thành phố.</p>
+                    <span class="price">2.600.000đ/đêm</span>
+                    <button>Đặt ngay</button>
+                </div>
+                <div class="room-card">
+                    <img src="https://images.unsplash.com/photo-1464983953574-0892a716854b?auto=format&fit=crop&w=400&q=80" alt="Family Room">
+                    <h3>Phòng Family</h3>
+                    <p>Rộng rãi, lý tưởng cho gia đình nhỏ.</p>
+                    <span class="price">3.000.000đ/đêm</span>
+                    <button>Đặt ngay</button>
+                </div>
+                <div class="room-card">
+                    <img src="https://images.unsplash.com/photo-1507089947368-19c1da9775ae?auto=format&fit=crop&w=400&q=80" alt="Suite Room">
+                    <h3>Phòng Suite</h3>
+                    <p>Không gian sang trọng, tiện nghi cao cấp.</p>
+                    <span class="price">4.000.000đ/đêm</span>
+                    <button>Đặt ngay</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 5. Dịch vụ nổi bật -->
+    <section class="services" id="services">
+        <div class="container">
+            <h2>Dịch vụ nổi bật</h2>
+            <div class="service-list">
+                <div class="service-card">
+                    <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=400&q=80" alt="Nhà hàng">
+                    <h3>Nhà hàng</h3>
+                    <p>Ẩm thực đa dạng, phục vụ cả ngày.</p>
+                </div>
+                <div class="service-card">
+                    <img src="https://images.unsplash.com/photo-1519125323398-675f0ddb6308?auto=format&fit=crop&w=400&q=80" alt="Sky Bar">
+                    <h3>Sky Bar</h3>
+                    <p>Không gian lý tưởng ngắm thành phố về đêm.</p>
+                </div>
+                <div class="service-card">
+                    <img src="https://images.unsplash.com/photo-1509228468518-c5eeecbff44a?auto=format&fit=crop&w=400&q=80" alt="Spa">
+                    <h3>Spa</h3>
+                    <p>Thư giãn, làm đẹp với các liệu trình chuyên nghiệp.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 6. Ưu đãi -->
+    <section class="offers" id="offers">
+        <div class="container">
+            <h2>Ưu đãi</h2>
+            <div class="offer-list">
+                <div class="offer-card">
+                    <h3>Giảm 20% cho khách đặt phòng online</h3>
+                    <p>Áp dụng đến hết 31/12/2024</p>
+                </div>
+                <div class="offer-card">
+                    <h3>Miễn phí bữa sáng cho tất cả các phòng</h3>
+                    <p>Chỉ áp dụng cho khách lưu trú từ 2 đêm trở lên</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 7. Đánh giá khách -->
+    <section class="reviews" id="reviews">
+        <div class="container">
+            <h2>Đánh giá khách hàng</h2>
+            <div class="review-list">
+                <div class="review-card">
+                    <p>"Khách sạn rất đẹp, nhân viên thân thiện và bữa sáng ngon miệng!"</p>
+                    <span>- Minh Anh</span>
+                </div>
+                <div class="review-card">
+                    <p>"Phòng sạch sẽ, view thành phố tuyệt vời. Sẽ quay lại!"</p>
+                    <span>- Quốc Huy</span>
+                </div>
+                <div class="review-card">
+                    <p>"Dịch vụ chuyên nghiệp, tiện nghi hiện đại."</p>
+                    <span>- Lan Phương</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 8. Liên hệ + Footer -->
+    <footer class="footer" id="contact">
+        <div class="container footer-flex">
+            <div class="footer-info">
+                <h3>HotelDemo</h3>
+                <p>Địa chỉ: 123 Đường ABC, Quận 1, TP.HCM</p>
+                <p>Điện thoại: 0123 456 789</p>
+                <p>Email: info@hoteldemo.vn</p>
+            </div>
+            <div class="footer-contact">
+                <h4>Liên hệ với chúng tôi</h4>
+                <form id="contactForm">
+                    <input type="text" id="name" placeholder="Họ tên" required>
+                    <input type="email" id="email" placeholder="Email" required>
+                    <textarea id="message" placeholder="Nội dung" required></textarea>
+                    <button type="submit">Gửi</button>
+                </form>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 HotelDemo. All rights reserved.</p>
+        </div>
+    </footer>
+    <div id="popup" style="display:none;position:fixed;top:0;left:0;width:100vw;height:100vh;background:rgba(0,0,0,0.4);z-index:9999;align-items:center;justify-content:center;">
+        <div style="background:#fff;padding:32px 24px;border-radius:10px;min-width:260px;text-align:center;position:relative;">
+            <span id="popupMsg">Đặt phòng thành công!</span>
+            <button onclick="document.getElementById('popup').style.display='none'" style="margin-top:18px;padding:8px 24px;background:#2d6a4f;color:#fff;border:none;border-radius:6px;cursor:pointer;">Đóng</button>
+        </div>
+    </div>
+    <script>
+    // 1. Cuộn mượt khi bấm menu
+    document.querySelectorAll('.nav a').forEach(link => {
+        link.addEventListener('click', function(e) {
+            const href = this.getAttribute('href');
+            if (href.startsWith('#')) {
+                e.preventDefault();
+                const target = document.querySelector(href);
+                if (target) {
+                    window.scrollTo({
+                        top: target.offsetTop - 60,
+                        behavior: 'smooth'
+                    });
+                }
+            }
+        });
+    });
+    // 2. Kiểm tra form liên hệ
+    document.getElementById('contactForm').addEventListener('submit', function(e) {
+        e.preventDefault();
+        const name = document.getElementById('name').value.trim();
+        const email = document.getElementById('email').value.trim();
+        const message = document.getElementById('message').value.trim();
+        const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        if (!name || !email || !message) {
+            alert('Vui lòng điền đầy đủ thông tin!');
+            return;
+        }
+        if (!emailRegex.test(email)) {
+            alert('Email không hợp lệ!');
+            return;
+        }
+        alert('Cảm ơn bạn đã liên hệ! Chúng tôi sẽ phản hồi sớm nhất.');
+        this.reset();
+    });
+    // 3. Popup khi bấm Đặt ngay
+    document.querySelectorAll('.room-card button').forEach(btn => {
+        btn.addEventListener('click', function(e) {
+            e.preventDefault();
+            document.getElementById('popupMsg').innerText = 'Cảm ơn bạn đã chọn phòng! Chúng tôi sẽ liên hệ xác nhận.';
+            document.getElementById('popup').style.display = 'flex';
+        });
+    });
+    </script>
+</body>
+</html> 
