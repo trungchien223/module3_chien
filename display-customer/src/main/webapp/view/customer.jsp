@@ -19,22 +19,27 @@
 </head>
 <body>
 <h2>Danh sách khách hàng</h2>
-<table>
-  <tr>
-    <th>Tên</th>
-    <th>Ngày sinh</th>
-    <th>Địa chỉ</th>
-    <th>Ảnh</th>
-  </tr>
-  <c:forEach var="customer" items="${customers}">
+<c:if test="${empty customers}">
+  <p style="text-align: center; color: red;">Không có dữ liệu khách hàng.</p>
+</c:if>
+<c:if test="${not empty customers}">
+  <table>
     <tr>
-      <td>${customer.name}</td>
-      <td>${customer.birthday}</td>
-      <td>${customer.address}</td>
-      <td><img src="${customer.image}" alt="Ảnh khách hàng"/></td>
+      <th>Tên</th>
+      <th>Ngày sinh</th>
+      <th>Địa chỉ</th>
+      <th>Ảnh</th>
     </tr>
-  </c:forEach>
-</table>
+    <c:forEach var="customer" items="${customers}">
+      <tr>
+        <td>${customer.name}</td>
+        <td>${customer.birthday}</td>
+        <td>${customer.address}</td>
+        <td><img src="${customer.image}" alt="Ảnh khách hàng"/></td>
+      </tr>
+    </c:forEach>
+  </table>
+</c:if>
 </body>
 </html>
 
