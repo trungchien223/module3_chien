@@ -13,7 +13,7 @@ public class CustomerController extends HttpServlet {
         List<Customer> customers = CustomerService.getCustomers();
         request.setAttribute("customers", customers);
 
-        RequestDispatcher dispatcher = request.getRequestDispatcher("customer.jsp");
+        RequestDispatcher dispatcher = request.getRequestDispatcher("view/customer.jsp");
         dispatcher.forward(request, response);
     }
 }
