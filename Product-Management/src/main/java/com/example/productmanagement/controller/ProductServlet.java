@@ -147,6 +147,12 @@ public class ProductServlet extends HttpServlet {
 
     private void deleteProduct(HttpServletRequest request, HttpServletResponse response) throws IOException {
         int id = Integer.parseInt(request.getParameter("id"));
+        Product product = productService.findById(id);
+        if (product == null) {
+            request.getSession().setAttribute("message", "Sản phẩm không tồn tại!");
+            response.sendRedirect("/products");
+            return;
+        }
         productService.delete(id);
         request.getSession().setAttribute("message", "Xoá sản phẩm thành công!");
         response.sendRedirect("/products");
